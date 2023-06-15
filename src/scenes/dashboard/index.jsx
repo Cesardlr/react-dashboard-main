@@ -178,7 +178,7 @@ export const Dashboard = () => {
         >
           <Box
             display="flex"
-            justfifyContent="space-between"
+            justifyContent="space-between"
             alignItems="center"
             borderBottom={`4px solid ${colors.primary[500]}`}
             color={colors.grey[100]}
@@ -238,11 +238,11 @@ export const Dashboard = () => {
             alignItems="center"
             mt="25px"
           >
-            <ProgressCircle size="125" />
+            <ProgressCircle size="100" />
             <Typography
-              vcariant="h5"
+              variant="h5"
               color={colors.greenAccent[500]}
-              sx={{ mt: "25px" }}
+              sx={{ mt: "15px" }}
             >
               $48,352 Revenue Generated
             </Typography>
@@ -259,11 +259,11 @@ export const Dashboard = () => {
           <Typography
             variant="h5"
             fontWeight="600"
-            sx={{ p: "30px 30px 0 30px" }}
+            sx={{ padding: "30px 30px 0 30px" }}
           >
             Sales Quantity
           </Typography>
-          <Box height="250px" mt="-20px">
+          <Box height="200px" mt="-20px">
             <BarChart isDashboard={true} />
           </Box>
         </Box>
@@ -272,18 +272,20 @@ export const Dashboard = () => {
           gridColumn="span 4"
           gridRow="span 2"
           backgroundColor={colors.primary[400]}
-          p="30px"
+          padding="30px"
         >
-          <Typography variant="h5" fontWeight="600" sx={{ mb: "15px" }}>
+          <Typography
+            variant="h5"
+            fontWeight="600"
+            sx={{ marginBottom: "15px" }}
+          >
             Geography Based Traffic
           </Typography>
 
-          <Box height="200px" mt="-20px">
+          <Box height="200px">
             <GeographyChart isDashboard={true} />
           </Box>
         </Box>
-
-        {/*  */}
       </Box>
     </Box>
   );

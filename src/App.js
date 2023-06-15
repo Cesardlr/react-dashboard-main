@@ -23,7 +23,7 @@ function App() {
         <CssBaseline />
         <div className="app">
           <Sidebar />
-          <main className="content">
+          <main className="content" style={{ marginLeft: "280px" }}>
             <TopBar />
             <Routes>
               <Route path="/" element={<Dashboard />} />
@@ -40,7 +40,6 @@ function App() {
             </Routes>
           </main>
         </div>
-        ;
       </ThemeProvider>
     </ColorModeContext.Provider>
   );

@@ -61,7 +61,17 @@ export const Sidebar = () => {
         },
       }}
     >
-      <ProSidebar collapsed={isCollapsed}>
+      <ProSidebar
+        collapsed={isCollapsed}
+        style={{
+          height: "100%",
+          width: "200px",
+          position: "fixed",
+          zIndex: 1,
+          left: 0,
+          top: 0,
+        }}
+      >
         <Menu iconShape="square">
           {/* LOGO AND MENU ICON */}
           <MenuItem
@@ -114,7 +124,7 @@ export const Sidebar = () => {
                 <Typography
                   variant="h2"
                   color={colors.grey[100]}
-                  fontWeigth="bold"
+                  fontWeight="bold"
                   sx={{ m: "10px 0 0 0" }}
                 >
                   Cesar Del Rio
